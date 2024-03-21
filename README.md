@@ -1,23 +1,15 @@
-# STREAMLINED DATA PROFILING AND AUTOMATED MACHINE LEARNING MODEL GENERATION
+## Streamlined Data Profiling and Automated Machine Learning Model Generation
 
 ## Abstract
-In a time when there is an abundance of data but little machine learning expertise, creating reliable predictive models is a major challenge. Our suggestion to tackle this problem is to put in place an Automated Machine Learning (AutoML) system with an intuitive web interface. With the goal of facilitating users with varying backgrounds and levels of experience, this system seeks to simplify the training and extraction of predictive models with ease, accuracy, and speed.
+In an era characterized by data abundance but limited machine learning expertise, building reliable predictive models poses a significant challenge. Our solution involves implementing an Automated Machine Learning (AutoML) system with an intuitive web interface, aiming to simplify model training and extraction with ease, accuracy, and speed. The project comprises four main components: data profiling, data upload, model training, and model evaluation. Users can effortlessly upload structured datasets and gain insights through interactive statistics and visualizations in the data profiling section. The system automates model training across various algorithms, optimizing performance and facilitating informed decision-making through detailed parameter and metric insights. Evaluation graphs and visualizations aid in thorough performance assessment, empowering users to download the most accurate model for their specific needs. By democratizing machine learning model development, this project addresses the pressing need for accessible data analytics solutions, enabling organizations to harness their data effectively for informed decision-making and innovation, without requiring extensive manual intervention.
 
-The four main parts of the project are model training, model evaluation, data profiling, and data upload. The process of developing a model can be started by users uploading datasets in structured formats like Excel or CSV with ease. Before moving on, users can better grasp their data by using interactive statistics and visualizations in the data profiling section, which offer insights into the dataset's features.
-
-Users have the option to designate the model type (classification or regression) and target output feature after conducting data exploration. The AutoML system uses sophisticated algorithms to optimize model performance as it automatically trains a number of machine-learning models on the dataset. This allows for well-informed decision-making during the model selection process by offering detailed insights into model parameters and performance metrics.
-
-To thoroughly evaluate model performance and make defensible decisions, users can access evaluation graphs and visualizations. Users are empowered to effectively leverage their data for a variety of applications by having the option to download the trained machine learning model after choosing the most accurate model for their particular needs.
-
-This project alleviates the pressing need for affordable and effective solutions in the field of data analytics by democratizing the development of machine learning models. Data-driven decision-making and innovation are encouraged as it empowers them to leverage their data without requiring significant manual intervention.
-
-## Architecture Diagram
+## System Architecture
 ![Sys_Architecture drawio (1)](https://github.com/vincent-isaac/Project-2/assets/75234588/15e73dcf-2390-4da2-a520-5fc29e80e926)
 
 ## Features
 - User-friendly web interface for easy interaction.
 - Automated data profiling to understand dataset characteristics.
-- Automated model training with multiple algorithms.
+- Automatic model training with multiple algorithms.
 - Hyperparameter optimization for optimal model performance.
 - Model evaluation and comparison with visualizations.
 - Downloadable trained machine learning models for deployment.
@@ -25,6 +17,14 @@ This project alleviates the pressing need for affordable and effective solutions
 ## Flow Diagram
 ![Flow_ML (1)](https://github.com/vincent-isaac/Project-2/assets/75234588/c423ee22-9f84-44c4-b047-775c52c94e82)
 
+## Requirements
+- Operating System: Compatible with 64-bit OS (Windows, Ubuntu).
+- Development Environment: Python 3.6 or later.
+- Machine Learning Frameworks: scikit-learn, TensorFlow, H2O.
+- Web Framework: Flask for building the user interface.
+- Frontend Technologies: HTML/CSS/JavaScript for designing the web interface.
+- Cloud Platform: AWS/GCP/Azure for scalable deployment.
+- Additional Dependencies: Docker for containerization, Git for version control.
 
 ## Implementation
 The project is implemented using the following technologies:
@@ -41,6 +41,26 @@ To use the system, follow these steps:
 5. Explore data characteristics, train multiple models, and evaluate their performance.
 6. Download the trained model for deployment in production environments.
 
+## Output
+#### User Interface
+![image](https://github.com/vincent-isaac/Project-2/assets/75234588/6504705d-49e9-42ef-9a95-a7354071294e)
+
+#### Load Dataset
+![image](https://github.com/vincent-isaac/Project-2/assets/75234588/2e67c7b5-4e07-49a9-bf1a-612a28621ee6)
+
+#### Data Profiling
+![image](https://github.com/vincent-isaac/Project-2/assets/75234588/ca5dc42a-528e-4ffc-a1ec-45ac87c67c93)
+
+#### Train ML Models
+![image](https://github.com/vincent-isaac/Project-2/assets/75234588/a770cd7a-5522-405d-8e44-9c4cd2ae7198)
+
+#### Trained Model Evaluation
+![image](https://github.com/vincent-isaac/Project-2/assets/75234588/59c64028-a6da-4028-9440-75842dcb3247)
+
+
+## Results and Impact
+The Streamlined Data Profiling and Automated Machine Learning Model Generation project significantly enhances efficiency and accuracy in data analysis and predictive modeling. By automating key tasks, the project accelerates decision-making and innovation, ultimately driving value and competitive advantage for organizations across various domains.
+
 ## Future Scope
 - Improve model interpretability and explainability.
 - Integrate Neural Networks and Transfer learning compatability.
@@ -49,3 +69,16 @@ To use the system, follow these steps:
 
 ## Developed By
 - [Vincent Isaac Jeyaraj J](https://github.com/vincent-isaac): Data Scientist & Researcher
+
+## Articles published / References
+1. Clemente, F., Ribeiro, G. M., Quemy, A., Santos, M. S., Pereira, R. C., & Barros, A. (2023). Ydata-profiling: Accelerating data-centric AI with high-quality data. Neurocomputing, 554, 126585. https://doi.org/10.1016/j.neucom.2023.126585
+2. He, X., Zhao, K., & Chu, X. (2021). AutoML: A survey of the state-of-the-art. Knowledge-Based Systems, 212, 106622. https://doi.org/10.1016/j.knosys.2020.106622
+3. LeDell, E. and Poirier, S., 2020, July. H2o automl: Scalable automatic machine learning. In Proceedings of the AutoML Workshop at ICML (Vol. 2020). ICML.
+44. M. Wever, A. Tornede, F. Mohr and E. Hüllermeier, "AutoML for Multi-Label Classification: Overview and Empirical Evaluation," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 9, pp. 3037-3054, 1 Sept. 2021, doi: 10.1109/TPAMI.2021.3051276. 
+5. Real, E., Liang, C., So, D. and Le, Q., 2020, November. Automl-zero: Evolving machine learning algorithms from scratch. In International conference on machine learning (pp. 8007-8019). PMLR.
+6. A. Truong, A. Walters, J. Goodsitt, K. Hines, C. B. Bruss and R. Farivar, "Towards Automated Machine Learning: Evaluation and Comparison of AutoML Approaches and Tools," 2019 IEEE 31st International Conference on Tools with Artificial Intelligence (ICTAI), Portland, OR, USA, 2019, pp. 1471-1479, doi: 10.1109/ICTAI.2019.00209. 
+7. Arai, K., Shimazoe, J. and Oda, M., 2023. Method for Hyperparameter Tuning of Image Classification with PyCaret. International Journal of Advanced Computer Science and Applications, 14(9).
+8. Yakovlev, A., Moghadam, H.F., Moharrer, A., Cai, J., Chavoshi, N., Varadarajan, V., Agrawal, S.R., Idicula, S., Karnagel, T., Jinturkar, S. and Agarwal, N., 2020. Oracle automl: a fast and predictive automl pipeline. Proceedings of the VLDB Endowment, 13(12), pp.3166-3180.
+9. Weng, Z., 2019, April. From conventional machine learning to AutoML. In Journal of Physics: Conference Series (Vol. 1207, p. 012015). IOP Publishing.
+10. Wang, C., Wu, Q., Weimer, M. and Zhu, E., 2021. Flaml: A fast and lightweight automl library. Proceedings of Machine Learning and Systems, 3, pp.434-447.
+11. Abedjan, Z., Golab, L. and Naumann, F., 2017, May. Data profiling: A tutorial. In Proceedings of the 2017 ACM International Conference on Management of Data (pp. 1747-1751).
